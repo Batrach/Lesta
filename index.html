@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet'  href='main.css'>
+<style>
+  body{
+    max-width: 1920px;
+    padding: 0 30px;
+
+  }
+  .game{
+    margin: 0 auto;
+  }
+  .header{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto ;
+    color: rgba(36, 5, 36, 0.492);
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .wrapper{
+    margin: auto ;
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    display: grid;
+        grid-template-areas: 
+        "1 2 3"
+        "4 5 6"
+        "7 8 9";
+        justify-items: center;
+        align-items: center;
+      font-size: 5.5em;
+      text-align: center;
+      border-radius: 15px;
+      
+}
+.pole{
+  
+  height: 90px;
+  width: 90px;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+.pole:hover{
+  cursor: pointer;
+  background-color: slategray;
+  transition: 0.4s ease-in-out;
+}
+
+.container2{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+  padding-top: 10px;
+}
+.okko{
+  width: 160px;
+  height: 100px;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 13px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.restart{
+  margin-top: 30px auto;
+}
+.btn{
+  margin-top: 20px;
+  width: 150px;
+  height: 75px;
+  background-color: linear-gradient(45deg, #EECFBA, #C5DDE8);
+  border-radius: 15px;  
+}
+.btn:hover{
+  cursor: pointer;
+  background-color:black;
+  color: #EECFBA;
+  transition: 0.3s ease-in-out;
+}
+.result{
+  color: royalblue;
+}
+.table__container{
+  max-width: 1920px;
+}
+.table__container__block{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #8E8E8E;
+}
+.link__news, .link__task, .link__disain {
+  flex-basis: 150px;
+  flex-grow: 1;
+}
+
+</style>
+</head>
+<h2>Первое задание</h2>
+<div class="table__container">
+  <div class="table__container__block">
+    <div class="link__news"><a href="https://ixbt.games/news/2023/03/05/the-wolf-among-us-2-ne-vyidet-v-2023-goda-nazvany-priciny-perenosa.html">Ссылка №1</a></div>
+    <div class="link__task">Данная новость сообщает нам о выходе игры  Wolf Among Us 2 в свое время первая часть была хитом, игровая студия которая разрабатывала игру(TellTale) была очень успешной, но со временем скатилась к самоповторам и не приносили ничего нового в механики, они давно в упадке, но первая часть Wolf Among Us была очень хорошей игрой, и скорее всего еще осталось много поклонников даннной игры. Тем самым нам сообщают что студия еще в порядке и скоро ждите отличный релиз, тем более от них давно, ничего стоящего не было. </div>
+    <div class="link__disain">Офромление хорошо тем что на главном изображении Вулфи, главный герой игры, очень харизматичный персонаж. и внизу трейлер к игре, который подогревает интерес</div>
+  </div>
+  <div class="table__container__block">
+    <div class="link__news"><a href="https://stopgame.ru/newsdata/57258/pokaz_ot_capcom_sostoitsya_10_marta_a_future_games_show_provedut_v_noch_na_24_marta">Ссылка №2</a></div>
+    <div class="link__task">Данная новость нас информируют о ближайших мероприятиях Capcom, где и когда можно будет познакомится с их анонсами, про какие игры расскажут на событиях, а так же кто будет в роли ведущих, в конце статьи упоминается предыдущий анонс от другой игровой студии</div>
+    <div class="link__disain">Данная новость оформленна как маркированный список, с вторичным вложением. Очень Лаконично оформленная новость, где четко выделенно на что стоит обратить внимание, я бы добавил немного изображений маскотов компании, но я так понял что у стопгейм такая позиция по оформлению новостей, только вырезки из соц. сетей. вставляют, а изображение новости находится на главной странице. В упоминание предыдущей новости нет ссылки на нее</div>
+  </div>
+  <div class="table__container__block">
+    <div class="link__news"><a href="https://kanobu.ru/news/rockstar-pochtila-pamyat-syigravshego-antagonista-gta-vice-city-toma-sajzmora-464400/">Ссылка №3</a></div>
+    <div class="link__task">Данная новость сообщает нам о том, что крупная игровая компания помнит своих бывших сотрудников, это придает ей более человеческий вид, особенно в то время как Близзарl-Активизион, Юбисофт, ЕА, думают только об играх сервисах и как побольше заработать денег. Эта новость нам дает немного погрустить и понастольгировать, я допустим сразу вспомнил неоновые вывески на Оушен бич, к сожалению время идет, но скоро выйдет новая часть ГТА, кстати тоже про Vice city</div>
+    <div class="link__disain">Оформление супер, Персонаж игры Сонни из Vice city в черно-белом формате, как в некрологе, потом немного информации об игре, потом цитата представителя компании, и в конце yапоминание  о прошлой новости. Печально конечно, но помять о ГТА VC Всегда со мной) </div>
+  </div>
+</div>
+<h2>Второе задание</h2>
+<p>В новой новости очень лаконично создан контент, то есть, все статьи аккуратно разложенны и для пользователя очень удобно посмотреть именно то что он хочет, так же обилие лишних символов не отпугивает, как это происходит в первой версии сайта. Так же в первой новости, блоки с информацией и блоки с видео разной ширины. В новой версии не правильно работают стрелки навигации, они, на определенном скроле пропадают, а потом появляются на футере, это критическая ошибка. Так же не нравится самая первая новость, ее я бы тоже сделал в формате свернуть, развернуть. Остальное все нравится, очень аакуратно и красиво.</p>
+<h2>Третье задание</h2>
+<ul>
+  <li>Блоки с видео, которые идут на главной странице, сделел бы чуть понижеЮ что бы они не смешивались с заглавным изображением</li>
+  <li>Галерею сражений, я бы сделал зацикленным слайдером, использовал бы swiper js, без полосы прокрутки снизу, а так, что бы можно было прокручивать зажимая левую кнопку мыши, и приховере на изображение, оно бы немного увеличивалось, с плавной анимацией</li>
+  <li>Заглавный текст, не очень читается из-за облака на заднем плане, немного более контрастным бы сделал</li>
+  <li>К наградам и достижениям я бы попробовал добавить еще двух адмиралов, но с другой стороны, а их изображения сделал бы немного меньше</li>
+  <li>И было бы классно добавть анимацию флагам, там где идет описание стороны конфликта, что бы флаг развивался на заднем фоне, там где описание кораблей тоже так сделать, немного, так сказать, оживить сайт</li>
+</ul>
+<h2>Четвертое задание</h2>
+<div class="game">
+<h1 class="header">Крестики нолики</h1>
+<div class="container">
+  
+<div class="wrapper">
+  <div class="pole 1"></div>
+  <div class="pole 2"></div>
+  <div class="pole 3"></div>
+  <div class="pole 4"></div>
+  <div class="pole 5"></div>
+  <div class="pole 6"></div>
+  <div class="pole 7"></div>
+  <div class="pole 8"></div>
+  <div class="pole 9"></div>
+</div>
+</div>
+<div class="container2">
+<div class="okko">
+  <p class="winx">Выиграл X: <span class="winxspan result">0</span></p>
+  <p class="win0">Выиграл 0: <span class="win0span result">0</span></p>
+  <p class="drow">Ничья: <span class="drowspan result">0</span></p>
+</div>
+<div class="restart">
+<div class="letsgo">Ходит: <span class="whoturn">X</span></div>
+<button class="btn">начать заново</button>
+</div>
+</div>
+</div>
+
+
+</body> 
+</html>
+    <script>
+const container = document.querySelector('.wrapper')
+container.addEventListener('click', func1)
+const x='X'
+const o='0'
+
+const btn = document.querySelector('.btn')
+const winx = document.querySelector('.winxspan')
+const win0 = document.querySelector('.win0span')
+const drow = document.querySelector('.drowspan')
+const poles = document.querySelectorAll('.pole')
+const letsgo = document.querySelector(".letsgo")
+const whoturn = document.querySelector('.whoturn')
+
+  function func1(event){
+  
+  const target = event.target
+
+  if(target.innerHTML==''){
+    target.innerHTML = x
+    }else{
+    return false
+  }
+
+  numx=Number(winx.innerHTML)
+  
+  if(poles[0].innerHTML ==x &&poles[1].innerHTML ==x && poles[2].innerHTML ==x ||
+  poles[3].innerHTML ==x &&poles[4].innerHTML ==x && poles[5].innerHTML ==x ||
+  poles[6].innerHTML ==x &&poles[7].innerHTML ==x && poles[8].innerHTML ==x ||
+  poles[0].innerHTML ==x &&poles[4].innerHTML ==x && poles[8].innerHTML ==x ||
+  poles[6].innerHTML ==x &&poles[4].innerHTML ==x && poles[2].innerHTML ==x ||
+  poles[0].innerHTML ==x &&poles[3].innerHTML ==x && poles[6].innerHTML ==x ||
+  poles[1].innerHTML ==x &&poles[4].innerHTML ==x && poles[7].innerHTML ==x ||
+  poles[2].innerHTML ==x &&poles[5].innerHTML ==x && poles[8].innerHTML ==x 
+  ){
+    alert("ВЫИГРАЛ КРЕСТИК")
+    winx.innerHTML = numx +1
+    letsgo.firstChild.textContent = "Выиграл: "
+    whoturn.lastChild.textContent ='X'
+   
+    this.removeEventListener('click', func1)
+  } else if(poles[0].innerHTML !=='' &&poles[1].innerHTML !=="" && poles[2].innerHTML !=="" && 
+  poles[3].innerHTML !==""  &&poles[4].innerHTML !=="" && poles[5].innerHTML !==""  &&
+  poles[6].innerHTML !==""  &&poles[7].innerHTML !==""  && poles[8].innerHTML !=="" && numx==Number(winx.innerHTML)  ){
+    alert("НИЧЬЯ")
+    drow.innerHTML=Number(drow.innerHTML)+1
+  }
+  else{
+  whoturn.lastChild.textContent ='0'
+  }
+  setTimeout(()=>{
+    function compStep(){
+    const i = getRandomInt(0, 8)
+    function getRandomInt(min, max) {
+	       return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+    if(poles[i].innerHTML=='X' || poles[i].innerHTML=='0'){
+      compStep()
+      return;
+    }
+    poles[i].innerHTML='0'
+    whoturn.lastChild.textContent ='X'
+    if(poles[0].innerHTML ==o &&poles[1].innerHTML ==o && poles[2].innerHTML ==o ||
+    poles[3].innerHTML ==o &&poles[4].innerHTML ==o && poles[5].innerHTML ==o ||
+    poles[6].innerHTML ==o &&poles[7].innerHTML ==o && poles[8].innerHTML ==o ||
+    poles[0].innerHTML ==o &&poles[4].innerHTML ==o && poles[8].innerHTML ==o ||
+    poles[6].innerHTML ==o &&poles[4].innerHTML ==o && poles[2].innerHTML ==o ||
+    poles[0].innerHTML ==o &&poles[3].innerHTML ==o && poles[6].innerHTML ==o ||
+    poles[1].innerHTML ==o &&poles[4].innerHTML ==o && poles[7].innerHTML ==o ||
+    poles[2].innerHTML ==o &&poles[5].innerHTML ==o && poles[8].innerHTML ==o ){
+      win0.innerHTML = Number(win0.innerHTML)+1
+      alert("ВЫИГРАЛ НОЛИК")
+      letsgo.firstChild.textContent = "Выиграл: "
+      whoturn.lastChild.textContent ='0'
+    } else if (target.innerHTML == x){
+      this.preventDefault()}
+   
+  }
+    compStep()
+  }, 500)
+}
+
+btn.addEventListener('click', func3)
+function func3(){
+  poles.forEach(function(pole){
+    pole.innerHTML=''
+    letsgo.firstChild.textContent = "Ходит: "
+    whoturn.lastChild.textContent ='X'
+    container.addEventListener('click',func1)
+  })
+}
+
+
+</script>
+
+
